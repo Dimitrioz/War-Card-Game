@@ -8,7 +8,7 @@ class Player:
         return self.all_cards.pop(0)
     
     def add_cards(self, new_cards):
-        if isinstance(new_cards, list):
+        if type(new_cards) == type([]):
             # List of multiple Card objects
             self.all_cards.extend(new_cards)
         else:
